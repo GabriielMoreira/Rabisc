@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rabisc - Giz Ecológico</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #E8F5E9;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-image: url('https://imgur.com/1JyXSkg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            animation: slideIn 1s ease-in-out;
+        }
+
+        .logo {
+            width: 90%;
+            max-width: 600px;
+            border-radius: 10px;
+            animation: bounce 2s infinite;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #388E3C;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #F57F20;
+        }
+
+        section {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 20px auto;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h2 {
+            color: #F57F20;
+            font-size: 2rem;
+            border-bottom: 2px solid #F57F20;
+            padding-bottom: 5px;
+        }
+
+        p,
+        li {
+            color: #555;
+            margin: 10px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        img {
+            border-radius: 10px;
+            max-width: 100%;
+            animation: pulse 1.5s infinite;
+        }
+
+        /* Animações */
+        @keyframes slideIn {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounce {
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-10px);
+            }
+
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .logo {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="https://imgur.com/RJTw7zD.jpg" alt="Logo do Rabisc">
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#pigmentos">Pigmentos</a>
+            <a href="#facaVoceMesmo">Faça Você Mesmo</a>
+            <a href="https://www.instagram.com/rabisc.df/" target="_blank">Rede Social</a>
+        </nav>
+    </header>
+
+    <section id="sobre">
+        <h2>Sobre o Projeto</h2>
+        <p>O Rabisc nasceu com a missão de oferecer uma alternativa ecológica, segura e criativa para a produção de giz de cera, voltada para o público infantil. Utilizando apenas ceras vegetais e pigmentos 100% naturais, o Rabisc elimina o uso de materiais prejudiciais como parafina e pigmentos tóxicos, que impactam negativamente o meio ambiente e não são ideais para a saúde das crianças.</p>
+        <p>Com uma composição 100% vegetal, o Rabisc se destaca por ser uma opção que não só preserva a saúde dos pequenos, mas também reduz os impactos ambientais. As ceras vegetais, além de serem biodegradáveis, têm uma menor pegada de carbono em comparação com as alternativas sintéticas, contribuindo para a redução da poluição e para a preservação dos recursos naturais. Ao optar por um produto de origem vegetal, estamos também apoiando práticas agrícolas sustentáveis e a utilização responsável dos recursos da terra.</p>
+        <p>Nosso compromisso com a sustentabilidade vai além dos materiais usados. O Rabisc adota um processo de produção que minimiza desperdícios e busca eficiência em cada etapa, respeitando o meio ambiente em sua totalidade. Cada giz de cera é feito com cuidado, para garantir que, além de seguro para as crianças, também cause o menor impacto possível no planeta.</p>
+        <p>Com o Rabisc, as crianças podem se expressar artisticamente com liberdade, ao mesmo tempo em que são incentivadas a adotar uma postura responsável em relação ao mundo em que vivem. O produto não apenas oferece uma experiência de aprendizagem criativa, mas também contribui para o desenvolvimento de uma consciência ambiental desde cedo, ajudando a formar cidadãos que entendem a importância de fazer escolhas sustentáveis no dia a dia.</p>
+    </section>
+
+    <section id="pigmentos" style="display: flex; align-items: center; gap: 20px;">
+        <div style="flex: 1;">
+            <h2>Pigmentos Naturais</h2>
+            <p>Outra mudança significativa em nosso projeto foi a substituição dos pigmentos tóxicos, frequentemente utilizados na fabricação de giz de cera, por pigmentos 100% vegetais. Os pigmentos sintéticos, além de serem derivados de processos químicos que podem liberar substâncias nocivas no meio ambiente, também apresentam riscos à saúde humana, especialmente para crianças que são os principais usuários de giz de cera.</p>
+            <p>Optando por pigmentos naturais, como aqueles provenientes de terra, folhas e outros materiais orgânicos, garantimos que nosso produto seja não apenas seguro para o uso, mas também eco-friendly. Esses pigmentos não apenas conferem cores vibrantes, mas também têm o potencial de ser biodegradáveis, reduzindo o impacto ambiental no descarte do produto.</p>
+        </div>
+        <div style="flex: 1;">
+            <img src="https://imgur.com/BVi7D6v.jpg" alt="Pigmentos Naturais" style="max-width: 100%; border-radius: 10px;">
+        </div>
+    </section>
+
+    <section id="facaVoceMesmo">
+        <h2>Faça Você Mesmo</h2>
+        <img src="https://imgur.com/kLei5VM.jpg" alt="Materiais para Fazer Giz de Cera" style="max-width: 100%; border-radius: 10px;">
+        <p><strong>Materiais Necessários:</strong></p>
+        <ul>
+            <li>Moedor (para moer a matéria-prima)</li>
+            <li>Panela (para aquecer e misturar os ingredientes)</li>
+            <li>Colher (para misturar)</li>
+            <li>Pote (para misturas)</li>
+            <li>Peneira (para refinar o pó)</li>
+            <li>Forma (para moldar o giz)</li>
+            <li>Vaselina ou Óleo (para untar a forma)</li>
+        </ul>
+        <p><strong>Ingredientes:</strong></p>
+        <ul>
+            <li>Cera de palma (10g)</li>
+            <li>Parafina (1/4 da quantidade de cera)</li>
+            <li>Pigmento natural (proveniente da natureza)</li>
+            <li>Óleo de milho (para diluir o pigmento)</li>
+        </ul>
+        <p><strong>Passo a Passo da Produção do Giz de Cera:</strong></p>
+        <ol>
+            <li><strong>Separação dos Materiais:</strong> Organize todos os materiais e ingredientes em uma mesa para facilitar o acesso durante o processo de fabricação.</li>
+            <li><strong>Moagem da Matéria-Prima:</strong> Retire a matéria prima da natureza e deixe secar completamente (no sol ou no forno, porém cuidado para não queimar, pode influenciar na cor do pigmento caso ocorra). Coloque a matéria-prima (os pigmentos naturais) no grau de cerâmica. Triture até que ela fique em estado de pó fino e homogêneo.</li>
+            <li><strong>Peneiramento:</strong> Passe o pó moído pela peneira para garantir que não haja grumos. Reserve o pó peneirado em um recipiente adequado.</li>
+            <li><strong>Preparação do Banho-Maria e pesagem:</strong> Coloque um recipiente resistente ao calor sobre uma panela (sem que toque na água) para formar o banho-maria. Coloque neste recipiente água e deixe esquentar até chegar ao ponto de ebulição. Use uma balança para uma precisão melhor de quantidade, coloque a quantidade desejada e anote sempre.</li>
+            <li><strong>Derretimento de Cera e Parafina:</strong> No recipiente do banho-maria, adicione a cera de palma e, em seguida, a parafina (1/4 da cera). Mexa até que a mistura derreta completamente.</li>
+            <li><strong>Preparação do Pigmento:</strong> Em um recipiente separado, adicione o pó do pigmento peneirado. Adicione a mesma quantidade de óleo de milho ao pigmento. Misture bem até que o pigmento esteja completamente diluído no óleo, formando uma pasta.</li>
+            <li><strong>Mix do Pigmento com a Cera:</strong> Com a cera e a parafina totalmente derretidas, adicione a mistura de pigmento diluído em óleo à panela. Continue mexendo por aproximadamente 4 minutos em fogo baixo para garantir que o pigmento se integre uniformemente à cera.</li>
+            <li><strong>Moldagem do Giz de Cera:</strong> Unte as formas de silicone com uma fina camada de vaselina para evitar que o giz grude. Adicione cuidadosamente a mistura de cera e pigmento nas formas de silicone. Quando preencher bem as formas, certifique-se de não deixar bolhas de ar.</li>
+            <li><strong>Resfriamento:</strong> Deixe o giz de cera descansar à temperatura ambiente ou em um local fresco até solidificar completamente. O tempo de resfriamento pode variar, mas geralmente leva alguns minutos.</li>
+            <li><strong>Desenformar:</strong> Após o giz de cera ter solidificado, desenforme com cuidado. Se necessário, apare as bordas com uma faca ou poliéster para um acabamento mais limpo.</li>
+        </ol>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Rabisc. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
